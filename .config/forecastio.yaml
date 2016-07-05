@@ -1,7 +1,7 @@
 # Forecast.io API Key
 api_key: <your_api_key_here> 
 
-marrickville:
+default:
  lat: -33.905100
  lng: 151.155100
 

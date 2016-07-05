@@ -8,7 +8,7 @@ config = YAML.load_file('/home/vagrant/.config/forecastio.yaml')
 
 ForecastIO.api_key = config["api_key"]
 
-forecast = ForecastIO.forecast(config["marrickville"]["lat"], config["marrickville"]["lng"], params: { units: 'si' })
+forecast = ForecastIO.forecast(config["default"]["lat"], config["marrickville"]["lng"], params: { units: 'si' })
 
 current_temp = forecast.currently.temperature
 max_temp = forecast.daily.data[0].temperatureMax
