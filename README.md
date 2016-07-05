@@ -33,6 +33,13 @@ If using [rbenv](https://rbenv.org):
 set -g status-left '#[fg=green]#H #[fg=black] #[fg=red,dim,bg=default]#(cat /tmp/tmux_weather.dat)'
 ```
 
+## Future enhancements
+
+* Unicode characters to represent weather
+* Home energy usage stats and temperature
+* Realtime train updates for next train home
+* Google traffic info (time to home)
+
 ## Support
 
 Please [open an issue](https://github.com/jonbartlett/tmus-status/issues/new) for support.
