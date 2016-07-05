@@ -36,6 +36,7 @@ set -g status-left '#[fg=green]#H #[fg=black] #[fg=red,dim,bg=default]#(cat /tmp
 ## Future enhancements
 
 * Unicode characters to represent weather
+* Weather data trends using up and down arrows
 * Home energy usage stats and temperature
 * Realtime train updates for next train home
 * Google traffic info (time to home)
