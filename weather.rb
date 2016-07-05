@@ -13,11 +13,12 @@ forecast = ForecastIO.forecast(config["default"]["lat"], config["default"]["lng"
 current_temp = forecast.currently.temperature
 max_temp = forecast.daily.data[0].temperatureMax
 min_temp = forecast.daily.data[0].temperatureMin
-rain_chance = forecast.daily.data[0].precipProbability
+rain_chance = forecast.daily.data[0].precipProbability * 100
 
 # write these to a file in the format of:
 # current_temp/min_temp/max_temp/rain_chance
-display_string = "#{current_temp}/#{min_temp}/#{max_temp}/#{rain_chance*100}%"
+#display_string = "#{current_temp}/#{min_temp}/#{max_temp}/#{rain_chance*100}%"
+display_string = "#{current_temp.round(1)}/#{rain_chance.round}%"
 
 tmp_file = File.open("/tmp/tmux_weather.dat", "w")
 tmp_file.puts display_string
