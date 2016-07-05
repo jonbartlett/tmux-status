@@ -16,6 +16,8 @@ chmod +x <scriptname>
 
 ## Usage
 
+* Add your [forcast.io](http://www.forecast.io) API Key to ```.config/forecastio.yaml``` and update location.
+
 * Schedule to run via Crontab or similar.
 
 If using [rbenv](https://rbenv.org):
@@ -25,7 +27,11 @@ If using [rbenv](https://rbenv.org):
 */5 * * * * /bin/bash -c 'export PATH="$HOME/.rbenv/bin:$PATH" ; eval "$(rbenv init -)" ; cd /home/vagrant/projects/tmux-status/; ./weather.rb'
 ```
 
-* Add your [forcast.io](http://www.forecast.io) API Key to ```.config/forecastio.yaml``` and update location.
+* Modify ```~/.tmux.conf``` as required:
+
+```
+set -g status-left '#[fg=green]#H #[fg=black] #[fg=red,dim,bg=default]#(cat /tmp/tmux_weather.dat)'
+```
 
 ## Support
 
