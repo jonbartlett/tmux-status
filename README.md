@@ -1,4 +1,4 @@
-#  TMUS Status
+#  TMUX Status
 
 Scripts to present information that is important to me on the TMUX Status Line. This current includes:
 
