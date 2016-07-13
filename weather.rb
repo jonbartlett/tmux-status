@@ -18,7 +18,7 @@ windspeed = forecast.currently.windSpeed
 
 # write these to a file
 #display_string = "#{current_temp}/#{min_temp}/#{max_temp}/#{rain_chance*100}%"
-display_string = "#{current_temp.round(1)}C #{rain_chance.round}% #{windspeed.round}km/h"
+display_string = "#{current_temp.round(1)}C #{rain_chance.round}% #{windspeed.round(1)}km/h"
 
 tmp_file = File.open("/tmp/tmux_weather.dat", "w")
 tmp_file.puts display_string
