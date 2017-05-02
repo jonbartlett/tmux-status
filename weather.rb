@@ -4,7 +4,7 @@
 require 'forecast_io'
 require 'yaml'
 
-config = YAML.load_file('/home/vagrant/.config/forecastio.yaml')
+config = YAML.load_file('.config/forecastio.yaml')
 
 ForecastIO.api_key = config["api_key"]
 
